@@ -1,5 +1,5 @@
 {% set name = "zope.deferredimport" %}
-{% set version = "6.0" %}
+{% set version = "6.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace(".", "_") }}-{{ version }}.tar.gz
-  sha256: dcceab59470497adb1bf32051a12355cde4e7f629ae1d21ac16ba830bc717fed
+  sha256: 959052d3f5e05c4c7854b88716971985e0b1b44a5c0163e12d9a0b90e4e3b6cc
 
 build:
   number: 0
@@ -39,7 +39,7 @@ about:
   license: ZPL 2.1
   license_family: OTHER
   license_file: LICENSE.txt
-  summary: 'defers import to when objects are actually used'
+  summary: defers import to when objects are actually used
   description: |
     Often, especially for package modules, you want to import names for
     convenience, but not actually perform the imports until necessary.
